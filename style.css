@@ -1,15 +1,52 @@
 body {
-    font-family: Arial, sans-serif;
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
-    background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding-top: 60px; /* Jättää tilaa ylävalikolle, ettei teksti jää alle */
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0; /* Vaihtaa valikon sivun yläosaan */
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* CSS3-ominaisuus 1: varjo */
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* CSS3-ominaisuus 2: pehmeä siirtymä */
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #004488;
+  color: white;
+}
+
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px; /* CSS3-ominaisuus 3: pyöristetyt kulmat */
 }
 
 h1 {
-    color: #003366;
+  color: #004488;
 }
 
 p {
-    line-height: 1.6;
+  line-height: 1.6;
 }
